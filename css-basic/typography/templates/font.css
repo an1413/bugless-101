@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Nastar";
+    font-style: normal;
+    font-weight: 300;
+    src: url('./assets/font/NanumSquareRound-master/NanumSquareRoundR.eot'); /* IE9 Compat Modes */
+    src: url('./assets/font/NanumSquareRound-master/NanumSquareRoundR.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('./assets/font/NanumSquareRound-master/NanumSquareRoundR.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./assets/font/NanumSquareRound-master/NanumSquareRoundR.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./assets/font/NanumSquareRound-master/NanumSquareRoundR.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
