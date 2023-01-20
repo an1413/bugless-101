@@ -4,3 +4,7 @@ p {
     margin: 10px;
     font-size: small;
 }
+
+.header {
+    background-color: #FDDED8;
+}
