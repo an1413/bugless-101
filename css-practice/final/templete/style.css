@@ -5,9 +5,157 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-family: 'Poppins', sans-serif;
+}
+
+/* Reset CSS Start ----------------------------------------------*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+    box-sizing: none;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2B292D;
+    letter-spacing: -0.01em;
+}
+
+.fill-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 48px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: -0.05em;
+    color: #fff;
+    background-color: #3040C4;
+    transition: opacity  300ms ease-in;
+}
+
+.fill-button.inverted {
+    color: #3040C4;
+    background-color: #fff;
+} 
+
+.fill-button:hover {
+    opacity: 0.5;
+}
+
+/* Landing */
+.landing {
+    background-color: #FDDED8;
+    text-align: center;
+}
+
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing-title {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #2B292D;
+    margin-bottom: 24px;
+}
+
+.landing-desc {
+    margin-bottom: 20px;
+}
+
+.landing .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing .button-group .fill-button:first-child {
+    margin-right: 8px;
+}
+
+
+
+
+/* > 768px (Desktop) */
+@media screen and (min-width:768px) {
+    /* Reset CSS */
+    p {
+        font-size: 22px;
+        line-height: 1.3636363636;
+    }
+
+    .fill-button {
+        width: 160px;
+        height: 56px;
+        font-size: 18px;
+        line-height: 1.5555556;
+    }
+
+    /* Landing */
+
+    .landing-content {
+        height: auto;
+        padding: 120px;
+    }
+
+
+    .landing-title {
+        margin-bottom: 32px;
+        font-size: 70px;
+        line-height: 1.0285014;
+    }
+
+    .landing-desc {
+        margin-bottom: 30px;
+    }
+
+    .landing .button-group .fill-button:first-child {
+        margin-right: 16px;
+    }
+
+
+}
+
+/* Reset Css Finish ---------------------------------------------*/
+
+/* Custom Grid System - Fix container width */
+@media screen and (min-width: 1200px){
+    .container {
+    max-width: 960px;
+    }
 }
 
 .header {
@@ -68,29 +216,86 @@ body {
     margin-top: 80px;
 }
 
+.navbar {
+    margin-bottom: 80px;
+}
 
-
-.section-2 dt {
+.section-2 h2 {
     color: #2B292D;
+    display: inline-block;
     font-size: 26px;
     font-weight: 700;
     line-height: 34px;
     margin-bottom: 16px;
+    width: 370px;
+    height: 68px;
 }
 
-.section-2 dd {
+.section-2 p {
     color: #2B292D;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
+    width: 370px;
+    height: 96px;
 }
 
-dl div dt{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.section-2 .h2-1 {
+    margin-left: 255px;
 }
-dl div dd {
+
+.article-content .short-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    color: #009B4D;
+    margin-bottom: 16px;
+
+}
+
+.article-content h1 {
+    font-size: 56px;
+    text-align: center;
+    font-weight: 700;
+    color: #2B292D;
+    margin-bottom: 32px;
+}
+
+.article-content p {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: #2B292D;
+    margin-bottom: 72px;
+
+}
+
+.article-imgbox {
     display: flex;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.program-1 {
+    position: relative;
+    width: 290px;
+    height: 299px;
+    margin-right: 30px;
+}
+
+.program-1 img {
+    position: absolute;
+
+}
+
+.program-2 {
+    width: 290px;
+    height: 299px;
+    margin-right: 30px;
+}
+
+.program-3 {
+    width: 290px;
+    height: 299px;
 }
